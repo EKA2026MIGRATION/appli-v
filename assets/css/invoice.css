@@ -1,0 +1,26 @@
+/** page create **/
+#invoiceForm { position: relative}
+#childList {  position: absolute; z-index: 99;
+              background-color: white;
+              padding: 20px 70px 20px 20px;
+              border: 3px solid #182d61;
+              border-radius: 10px;
+              display: none;
+              }
+#childList { list-style: none; }
+
+/** page list ***/
+#invoicePage { position: relative}
+#showInvoiceDetails { position: absolute; z-index: 99;
+                      background-color: white;
+                      border: 3px solid #182d61;
+                      border-radius: 10px;
+                      padding: 20px;
+                      width: 80%;
+                      display: none;
+                    }
+
+#invoiceHead { display: flex; justify-content: space-between;}
+#invoiceHead div { margin-top: 30px; margin-right: 40px}
+#invoiceInfo { font-weight: bold}
+#invoiceClose { color: red; font-weight: bold; font-size: 20px; cursor: pointer; float: right}

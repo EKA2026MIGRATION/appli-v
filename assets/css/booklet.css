@@ -1,0 +1,87 @@
+#bookletMenuLi {
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+    list-style:none;
+}
+
+#bookletMenuLi li {
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 15%;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#bookletMenuLi li:hover{
+  background-color: lightgrey;;
+  color: black;
+   box-shadow: 0px 0px 0px #555;
+}
+
+#bookletMenuLi .selected { background-color: darkblue; color: white; box-shadow: 1px 1px 12px #555;}
+
+.bookletAccordion { 
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.bookletAccordion li { 
+    margin-bottom: 25px;
+}
+
+.bookletAccordion h5 {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bookletDescription {
+    border-top: 1px solid grey;
+}
+
+.bookletTitle { cursor: pointer}
+
+.activeTitle { color: darkblue; font-weight: bold}
+
+.bookletDetails { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bookletDetails .element {
+    width: 45%;
+    min-width: 300px;
+}
+
+#action-open-associated {
+    min-width: 1200px;
+    background-color: white;
+}
+
+.flexRow {
+    display: flex; justify-content: space-around; flex-wrap: wrap; flex-direction: row;
+}
+
+.flexRow div {
+    min-width: 150px;
+    text-align: center
+}
+
+.flexRow div input[type=number] {
+    width: 70px;
+    margin: auto;
+}

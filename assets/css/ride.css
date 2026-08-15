@@ -1,0 +1,15 @@
+#showSmsSendList {display: none; border: 2px solid darkblue; border-radius: 10px; padding: 30px; box-shadow: 1px 1px 12px #555; background-color: white; position: absolute; z-index: 99; width: 100%; top: 0px;}
+.showInfoPickup {font-size: 1em; color: darkblue}
+
+.noSendSms { background-color: white}
+.sendSms { background-color: lightblue}
+.smsSent { border: 2px solid darkblue}
+.allSent { font-style: italic; font-size: 0.6em; border-top: 1px solid lightgray}
+
+.infoSmsSent { background-color: lightgray; color: darkblue; padding-left: 10px; font-style: italic;}
+
+.checkboxSendSms {font-size: 1.4em; cursor: pointer; padding: 10px; margin-bottom: 2px}
+#buttonSendSms { text-align: center; margin: 0 10%; width: 80%}
+#closeSmsModal { float: right}
+.kindRide { font-weight: bold; background-color: grey; padding: 10px; color: white; text-align: center}
+.rideName { font-weight: bold; background-color: lightgray; padding: 4px; color: black; text-align: center}

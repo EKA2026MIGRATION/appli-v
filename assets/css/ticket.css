@@ -1,0 +1,5 @@
+h5 {text-align: center; background-color: darkred; color: white }
+.ticket-type {display: flex; justify-content: space-between; font-weight: bold }
+.ticket-info { display: flex; justify-content: space-between;}
+.ticket-tel { display: flex; justify-content: space-between;}
+.ticket-content { font-style: italic; color: darkblue}

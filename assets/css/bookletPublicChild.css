@@ -1,0 +1,125 @@
+#child { color : #003594; font-family: 'Montserrat', sans-serif;}
+
+
+#child .title { font-size: 49px  }
+#child > div { min-height: 100vh; padding: 51px 51px 0px 51px; box-sizing: border-box;}
+
+#childData header {
+    max-height: 300px;
+}
+
+#childData header img {
+    max-height: 300px;
+    object-fit: contain;
+}
+
+
+
+#leftChild { width: 30%; position: relative;}
+
+#leftChild .tiret {
+    position: absolute;
+}
+
+.tiret-right { 
+    right: -30px; top: -30px;
+}
+
+.tiret-left { 
+    left: -30px; bottom: -30px;
+}
+
+#rightChild { width: 70% ;}
+
+#leftChild #childData { 
+    box-shadow: 0px 0px 12px #00000029;
+    padding-bottom: 30px;
+}
+
+#leftChild header { 
+    text-align: center;
+}
+
+
+#leftChild .childName {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+
+}
+
+#childData table {
+    font-size: 20px;
+    text-align: left;
+    margin: auto;
+}
+
+#childData table tr {
+    height: 60px;
+}
+
+
+#childData table tr td:first-child {
+    width: 60px; text-align: center;
+}
+#childData table tr td:nth-child(2) {
+    width: 150px;
+} 
+
+#childData table tr td:nth-child(3) {
+    text-align: right;
+} 
+
+#child .nextButton {
+    background-color: #003594;
+    color: white;
+    width: 170px;
+    padding-left: 40px; 
+}
+
+
+#child #simpleMenu ul {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 150px;
+    line-height: 3rem;
+    list-style-type: none;
+}
+
+#child #simpleMenu ul li {
+    cursor: pointer;
+    color: #003594;
+}
+
+#child #simpleMenu ul li span{
+    margin-right: 4px;
+    color: #D4161B;
+}
+
+#child #rightChild {
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+
+#child #dynamicMap {
+    margin-left: 100px; 
+    width: auto;
+    height: 70vh;
+    position: relative;
+}
+
+.iconChildMenu {
+    text-align: center;
+    position: absolute;
+    color: #D4161B;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.iconChildMenu span {
+    font-size: 30px;
+}

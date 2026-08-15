@@ -1,0 +1,32 @@
+.monthNameBar { cursor: pointer; background-color: darkblue; color: white; font-weight: bold; text-align: center;}
+.monthContent { display: none }
+.presenceTotalRow { font-style: italic; font-size: 12px; padding-left: 12px }
+.presenceRow { display: flex; justify-content: space-between}
+
+.typeABSENCE { background-color: lightgrey; color: darkred}
+.typeCATCHING { background-color: lightblue; color: darkblue}
+.typeBONUS { background-color: lightgreen; color: black}
+.typePRESENCE { background-color: #3a87ad; color: white}
+.typeVACATION { background-color: lightpink; COLOR: black;}
+.typeFORMATION { background-color: orangered; color: black }
+.typestage { background-color: #FCF6E3;}
+.typeecole { background-color: #F0FEFE}
+.typeinter { background-color: #E2F3D2}
+
+
+#showStaffPresenceForm {
+  display: none;
+  z-index: 99;
+  width: 300px;
+  border: 3px solid darkblue;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  padding: 20px;
+  background-color: white
+}
+
+.editButton {padding: 4px; border: 1px darkblue solid; text-align: center; margin: 0 auto; width: 100%; cursor: pointer}
+.taskPaginationBar ul { display: flex; justify-content: center;flex-wrap: wrap}
+.taskPaginationBar li div{ cursor: pointer; font-size: 12px; color: darkblue; padding: 4px 10px; border: 1px solid darkblue}
+
+.taskPaginationBar li .selected{ color: white; background-color: darkred; border: 1px solid darkred}

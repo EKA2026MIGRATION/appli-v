@@ -1,0 +1,11 @@
+#calendarViewWeek .workloadStaffName { width: 9%; float: left; }
+#calendarViewWeek .dayContent { width: 13%; float: left; font-size: 12px }
+#calendarViewWeek .titleDay { background-color: darkred; text-align: center; margin-bottom: 10px; padding-top: 8px; }
+
+@media screen and (max-width: 640px) {
+  #calendarViewWeek .workloadStaffName { width: 100% }
+  .dayContent { display: none};
+
+}
+ 
+    

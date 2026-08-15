@@ -1,0 +1,24 @@
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    level: 0
+    bootstrapFiles:
+        - .phpstan/bootstrap.php
+    paths:
+        - controller
+        - application
+        - services/MailerService.php
+        - services/PdfService.php
+        - services/Transliterator.php
+        - services/exTCPDF.php
+        - view/render
+        - view/template
+    scanDirectories:
+        - services/tcpdf
+        - vendor/phpmailer/phpmailer/src
+        - php-library/twilio-php-master/Twilio
+    scanFiles:
+        - services/VCard.php
+        - services/VCardException.php
+        - services/VCardParser.php

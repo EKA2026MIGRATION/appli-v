@@ -1,0 +1,18 @@
+
+.updateRoleSelect, .addUserEmail{
+  display: inline-block;
+  width: 160px;
+  font-size: 12px;
+
+  float: right;
+  margin-right: 30px!important;
+}
+
+.updateRoleSelect {height: 20px;
+width: 40px;}
+
+.barUserInformation { width: 40%; float: left}
+.actionUserPanel { width: 60%; float: right;}
+.showUserListByEmail { position: absolute; border: 2px solid darkblue; background-color: white; z-index: 10; display:none; padding: 10px; border-radius: 10px}
+.roleStaffUserToDelete, .roleStaffUserUndelete {cursor: pointer; font-size: 11px; border-radius: 10px; border: 1px solid black; color: darkblue; padding: 3px;margin-right: 6px}
+.roleStaffUserUndelete { background-color: lightblue; color: darkred }

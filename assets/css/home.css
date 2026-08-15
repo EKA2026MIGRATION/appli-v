@@ -1,0 +1,44 @@
+#dashboardMenuLi {
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+    list-style:none;
+}
+
+#dashboardMenuLi li {
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 15%;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#dashboardMenuLi li:hover{
+  background-color: lightgrey;;
+  color: black;
+   box-shadow: 0px 0px 0px #555;
+}
+
+#wazeMap { width: 640px }
+
+#dashboardMenuLi .selected { background-color: darkblue; color: white; box-shadow: 1px 1px 12px #555;}
+
+.aTaskDashboard {border-bottom: 1px solid lightgrey; padding-bottom: 10px; padding-top: 10px}
+.aTaskDashboard a { color: black!important; }
+.aTaskDashboard:hover { background-color: lightgrey}
+.aTaskDashboardDate { font-style: italic; font-size: 11px}
+
+@media screen and (max-width: 640px) {
+  .textButtonMenu { display: none}
+  #wazeMap { width: auto }
+
+}

@@ -1,0 +1,59 @@
+* { box-sizing: border-box;}
+:root{
+    --light-blue: #133893;
+    --dark-blue: #182d61;
+    --red: #98061a;
+  }
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+ul, li { margin: 0px; padding: 0px; list-style: none}
+#logo { width: 80px;}
+header { display: flex; font-family: Montserrat, Helvetica, Arial, sans-serif;}
+header img { margin-right: 10px;}
+h1 {
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    color: var(--light-blue);
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}
+
+
+#mainContent {
+    margin-top: 20px;
+}
+
+.intro { text-align: center; font-size: 1.4rem}
+.photoProfil { text-align: center}
+.photoProfil img { object-fit: cover; width: 100px; height: 100px; border-radius: 50%}
+
+.childName { font-family: Montserrat, Helvetica, Arial; color: var(--dark-blue)}
+
+.chapterName { 
+    background-color: var(--red);
+    color: white;
+    font-family: Montserrat, Helvetica, Arial;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    font-variant: all-petite-caps;
+}
+
+.chapterDescription { font-style: italic; font-size: 1rem; padding: 0px 10px; text-align: center}
+
+#mainContent ul { margin: 0px 20px; }
+#mainContent li { font-size: 1.2rem; text-align: center}
+#validForm {   
+    font-family: Montserrat, Helvetica, Arial;
+    font-size: 1.2rem;
+    color: white;
+
+} 
+
+.rateIcon { cursor: pointer; font-size: 2rem}
+.rateDefault { color: lightgrey}
+.rateChecked { color: darkblue}
+.hoverIconRate { color: #DFAF2C}

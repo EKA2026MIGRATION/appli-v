@@ -1,0 +1,676 @@
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Patrick Hand', cursive;
+
+*/
+
+/**************************** COVER PAGE ******/
+@import 'bookletPublicCover.css' screen;
+@import 'bookletPublicChild.css' screen;
+@import 'bookletPublicBoard.css' screen;
+
+
+/** font ***/
+.title,  #subtitle, .coachWord, .coachInfos { font-family: 'Montserrat', sans-serif;}
+.dateEvaluation, #textIntroduction, .nextButton, .prevButton, #childData table, .coachComment, #windowsFullScreen {font-family: 'Lato', sans-serif;}
+footer p, #right #childName, .coachInfos {font-family: 'Patrick Hand', cursive;}
+
+/*** color ***/
+.title::before , .title::after,  #subtitle, #childName::after, #childName::before, .coachWord {color: #D4161B } /** red **/
+.title, .dateEvaluation, footer p, #right #childName {color: #003594 } /** blue **/
+
+.background-blue { background-color: #003594 }
+.background-white {background-color: white }
+
+/***** button fullscreen ***/
+body { position: relative}
+
+#windowsFullScreen {
+    position: absolute;
+    top: 20%;
+    margin-right: 40%;
+    width: 30%;
+    margin-left: 30%;
+}
+
+
+#windowsFullScreen p {
+    background-color: white;
+    border-radius: 60px;
+    border: 3px solid darkred;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+#windowsFullScreen p button {
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+
+#buttonFullscreenNavigation {
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    font-size: 3rem;
+    display: none;
+}
+
+#buttonFullscreenNavigation i {
+    cursor: pointer;
+}
+
+
+/*** layout ***/
+body { margin: 0; padding: 0}
+.content { margin: auto; min-height: 100vh;}
+.heightVH { min-height: 100vh; }
+
+.right-border {
+    border-top-right-radius: 160px 160px;
+}
+.left-border {
+    border-bottom-left-radius: 160px 160px;
+} 
+
+.flexRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.boardElement {flex-wrap: nowrap; justify-content: space-around}
+
+
+/******* COMMON PAGE *******/
+.title { text-transform: uppercase; }
+
+.title, .dateEvaluation {
+    line-height: 130px;
+}
+
+.title::before , .title::after {
+    content: "."; line-height: 100px;
+}
+
+#left .title {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.title::before {
+    float: left;
+    margin-right: 30px;
+  }
+.title::after {
+    float: right;
+    margin-left: 30px
+}
+.dateEvaluation {
+    font-size: 20px;
+    font-weight: bold;
+}
+#cover .logo { 
+    width: 137px;
+    height: 137px;
+ }
+
+ .logo { 
+    width: 93px;
+    height: 93px;
+ }
+
+
+.navButton {
+    cursor: pointer;
+    background-color: white;
+    color: #003594;
+}
+
+.navButton:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.navButton:hover {
+    transition: transform 330ms ease-in-out;
+}
+
+.right-angle {
+
+} 
+
+.nextButton, .prevButton {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    bottom: 40px;
+    font-size: 1.3rem;
+    width: 200px;
+}
+
+.nextButton {
+    right: 40px;
+    text-align: right; 
+    padding-left: 60px;
+}
+
+.prevButton {
+    left: 40px;
+    text-align: left; 
+    padding-right: 60px;
+}
+
+
+.prevButton img {
+    transform: rotate(180deg)
+}
+
+.nextButton img, .prevButton img{
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+}
+
+.buttonBack {
+    position: absolute;
+    z-index: 99;
+    width: 130px;
+    height: 127px;
+    margin: 0 45%;;
+    bottom: 10px;
+    text-align: center;
+    background-image: url("images/btn-retour.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.buttonBack:hover {
+    filter: brightness(85%);
+}
+
+
+/*********** COMMENT *********/
+
+.coachComment, .coachWord, .coachInfos { text-align: center};
+.coachWord { margin-top: 40px; font-size: 30px;} 
+.coachComment { margin-top: 40px; font-size: 24px; color: #333333;}
+.coachInfos { margin-top: 40px; font-size: 24px}
+.coachInfos span { font-weight: bold; font-size: 30px} 
+
+#coachWordImgElement { width: 300px; position: relative; margin: 0 auto}
+#coachWordImgElement .coachWordImg { border: 14px solid white; object-fit: fill; overflow: hidden; background-color: white; max-height: 250px;}
+#coachWordImgElement .angle-coach-right,  #coachWordImgElement .angle-coach-left{ position: absolute}
+#coachWordImgElement .angle-coach-right { right: 8px;}
+#coachWordImgElement .angle-coach-left { left: 8px; bottom: 0px; transform: rotate(180deg)}
+
+
+@media screen and (max-width: 1440px) {
+    #left .title {
+        font-size: 2.6rem;
+    }
+
+    #textIntroduction {
+        font-size: 1.3rem;
+    }
+
+    #childData header img {
+        max-height: 250px;
+    }
+
+    #leftChild .childName {
+        margin-top: 10px;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+
+    #childData table tr {
+        height: 40px;
+    }
+
+
+    .totem {
+        height: 600px;
+    } 
+
+
+
+}
+
+
+/*** ipad pro ***/
+@media screen and (max-width: 1366px) {
+   
+    .board .title { font-size: 2.2rem  }
+
+    .boardName { font-size: 1.6rem }
+
+    .boardData .boardDescription { 
+        font-size: 1.1rem;
+        line-height: 1;
+    }
+
+    .boardData table td { font-size: 1rem; min-width: auto;}
+
+    .boardData table td div { font-size: 0.8rem}
+
+
+    .nextButton, .prevButton, .buttonBack  { font-size: 1rem}
+
+    .title::before {
+        margin-right: 10px;
+    }
+
+    .title::after {
+        margin-left: 10px;
+    }
+
+    .title::before, .title::after {
+        line-height: 110px;
+    }
+
+}
+
+
+/*** ipad 8 1080x810  and 600xp height ***/
+@media screen and (max-width: 1080px) {
+   
+    #left header {
+        margin-top: 0px;
+    }
+
+    #textIntroduction {
+        font-size: 0.9rem;
+        margin: 0 3%;
+    }
+
+    footer #coach {
+        height: 200px;
+        width: 200px;
+        border: 10px solid white;
+    }
+
+    #cover .dateEvaluation {
+        display: none;
+    }
+
+    #left header {
+        margin-top: 0px;
+    }
+
+    #cover .nextButton { 
+        width: auto;
+    }
+
+    #cover .logo { 
+        width: 93px
+    }
+
+    .flexRow {
+        justify-content: space-around;
+    }
+
+    footer p {
+        left: 100px;
+        top: 200px;
+    }
+
+    #illusCal2 { height: 30px}
+
+
+    /*** child page ***/
+
+    #child > div  {
+        padding-top: 10px;
+    }
+
+    #child .logo {
+        padding-top: 10px;
+    }
+
+    #leftChild { width: 40%}
+    #rightChild { width: 60%}
+
+    #right #childInfo img {
+        width: 150px;
+        height: 200px;
+        border: 10px solid white;
+    }
+
+    #right #childName {
+        font-size: 1rem;
+        padding: 2px 5px;
+    
+    }
+
+    #childData header img {
+        max-height: 200px;
+    }
+
+    #leftChild .childName {
+        margin-top: 5px;
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    #childData table {
+        font-size: 1rem;
+    }
+
+    #childData table tr {
+        height: 20px;
+    }
+
+    .tiret-left {
+        width: 20%;
+        left: -15px;
+        bottom: -15px;
+    }
+
+    .tiret-right {
+        width: 20%;
+        right: -15px;
+        top: -15px;
+    }
+    
+
+    /**** board page ****/
+
+    .nextButton, .prevButton {
+        bottom: 20px;
+    }
+
+    .nextButton, .prevButton { font-size: 1rem; width: 150px}
+    .buttonBack { width: 65px; height: 62px}
+
+    .buttonBack span { display: none}
+
+    .totem {
+        height: 400px;
+    } 
+
+    .board .title { font-size: 2rem  }
+
+    .boardName { font-size: 1.2rem }
+
+    .boardData .boardDescription { 
+        font-size: 0.8rem;
+        line-height: 1;
+    }
+
+    .boardData table td { font-size: 0.8rem; min-width: auto;}
+
+    .boardData table td div { font-size: 0.6rem}
+
+    .board .title, .board .dateEvaluation {
+        line-height: 2rem;
+    }
+
+    .board .title::before, .board .title::after {
+        line-height: 1.3rem;
+    }
+
+    .board .logo {
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+
+    .leftBoard .boardData {
+        margin-top: 40px
+    }
+
+    .board .tiret-right {
+        top: 15px;
+    }
+
+
+    /*** coach word ***/
+
+    #coachWord .buttonBack { margin-right: 20px;}
+
+    .coachComment {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .coachInfos span {
+        font-size: 1.2rem;
+    }
+
+    .coachInfos  {
+        font-size: 1rem;
+    }
+    #coachWordImgElement {
+        width: 260px;
+    }
+
+
+    .coachWordImg { height: 200px}
+    
+}
+
+@media screen and (max-width: 1024px) {
+   
+    #left header {
+        margin-top: 0px;
+    }
+
+    .totem {
+        height: 450px;
+    } 
+
+
+    #textIntroduction {
+        font-size: 1.1rem;
+        margin: 0 5%;
+    }
+
+
+    #cover .nextButton { 
+        width: auto;
+    }
+
+    #cover .logo { 
+        width: 93px
+    }
+
+    #cover .dateEvaluation {
+        display: none;
+    }
+
+    #leftChild { width: 40%}
+    #rightChild { width: 60%}
+
+}
+
+@media only screen and (orientation:landscape) and (max-widht: 900px) {
+    body {
+        height: 100vw;
+        transform: rotate(90deg);
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+
+    /*** COVER ****/
+   
+    #windowsFullScreen { display: none}
+
+    #cover #left { width: 100%; box-shadow: 0 -19px 19px 2px rgba(0, 0, 0, 0.1);    }
+
+
+    #cover #left .flexItem { margin-top: 30px}
+
+    #cover #right { width: 100%}
+
+
+    #left .title {
+        text-align: center;
+        line-height: 3rem;
+    }
+
+    #right #childInfo img {  
+        width: 300px;
+        height: 400px;
+        border: 15px solid white;
+    }
+
+    #right #childName {
+        font-size: 26px;
+        padding: 5px 10px;
+    }
+
+
+    #right #childInfo img {
+        width: 300px;
+        height: 400px;
+        border: 15px solid white;
+    }
+
+    .title::before , .title::after {
+        display: none;
+    }
+
+
+    footer { 
+        margin: 20px;
+        background-image: none;
+    }
+
+    footer div {
+        width: 100%;
+    }
+
+    img+#coach {
+        width: 100px;
+    }
+
+    footer p {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-right: 20px;
+    }
+
+
+    /*** CHILD ****/
+
+    #child > div {
+        padding: 51px 10px 0px 10px;
+    }
+
+    #child header #title,  #child header #date{
+        text-align: center;
+        line-height: 3rem;
+    }
+
+    #child header #title {
+        font-size: 2rem;
+        padding-right: 20px;
+    }
+    #child header #date {
+        font-size: 1.2rem;
+    }
+
+    #childData table tr {
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    #leftChild .childName {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    #childData header img {
+        max-height: 250px;
+    }
+    
+
+    #leftChild { width: 100%; margin-top: 20px;}
+
+    #leftChild #childData { padding-bottom: 0px}
+
+    #rightChild { display: none}
+
+
+    #child .nextButton {
+        position: initial;
+        margin-top: 50px;
+    }
+
+
+    /****** BOARD *****/
+
+
+    .board > div {
+        padding: 51px 10px 0px 10px;
+    }
+   
+    .board #title {
+        text-align: center;
+        margin-top: 20px;   
+        padding-right: 20px;
+    }
+
+    .board #date {
+        font-size: 1.2rem;
+    }
+
+
+    .boardElement {
+        flex-direction: column;
+    }
+
+    .board .leftBoard {
+        width: 100%;
+    }
+
+    .board .leftBoard .boardData{
+        min-height: 241px;
+    }
+
+    .totem {
+        margin-top: 20px!important;
+        height: auto;
+        max-height: 400px;
+ 
+    }
+
+    .buttonBack { display: none}
+
+
+    .nextButton, .prevButton {
+        width: 10%;
+        
+    }
+    
+
+    .nextButton .textButton, .prevButton .textButton {
+        display: none;
+    }
+
+
+    /**** COACH ****/
+    .coachInfos {
+        padding-bottom: 150px;
+    }
+        
+}
+
+
+
+

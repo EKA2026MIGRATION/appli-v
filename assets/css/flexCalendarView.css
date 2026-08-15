@@ -1,0 +1,52 @@
+
+.page__container { padding: 0px!important}
+.flexWeekView { display : flex; flex-wrap: wrap}
+.flexColumn { border: 1px solid black;  width: 14%; min-width: 85px;}
+.flexDate { padding: 4px 0px 4px 0px; text-align: center; color: darkblue}
+
+.calendarDivLine { border-bottom: 1px solid grey; font-size: 13px; position: relative}
+.calendarDivLine:hover { background-color: darkblue; color: white; cursor: pointer}
+
+.calendarDivLineInfo { display: none; position: absolute; z-index: 99; background-color: lightgrey; font-size: 12px; padding: 4px; border-radius: 10px; border: 2px solid darkblue}
+.calendarDivLine:hover + .calendarDivLineInfo { display: block}
+
+#calendarDayBar { display: none}
+
+@media screen and (max-width: 975px) {
+  .flexColumn {width: 100%;}
+
+  #topHeader {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+  }
+
+  .flexWeekView {
+    margin-top: 200px;
+  }
+
+  #calendarDayBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 8px;
+
+  }
+
+  #calendarDayBar div {
+    border-radius: 90px;
+    width: 40px;
+    height: 40px;
+    background-color:darkred;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: 36px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
+}

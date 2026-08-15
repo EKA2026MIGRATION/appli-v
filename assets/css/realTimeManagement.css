@@ -1,0 +1,9 @@
+#closeModalRealTime {font-size: 20px; font-weight: bold; color: red; cursor: pointer; float: right}
+.filterItemSelectButton {font-size: 18px; border: 1px solid black; color: grey; cursor: pointer;}
+.filterItemSelectButton:hover { color: black; background-color: lightgray}
+.filterActive { color: white; background-color: darkblue }
+.realTime-content {
+  list-style:none;
+  margin-left:0;
+  padding-left:0;
+}

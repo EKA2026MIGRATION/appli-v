@@ -1,0 +1,13 @@
+.idea/*
+vendor/
+node_modules/
+.env
+.env.local
+.DS_Store
+uploads/
+assets/document/
+
+# Identifiants Firebase/Google (compte de service + secret OAuth), à fournir
+# séparément par environnement — jamais en git (voir README).
+php-library/appli_V-*.json
+php-library/client_secret_*.json

@@ -1,0 +1,21 @@
+.taskH5 { text-align: center; background-color: darkred; color: white ;}
+.taskH6 { font-weight: bold; padding-left: 1.2em;}
+.taskUL { border-bottom: 1px solid darkred ; margin-left: 0px; }
+.taskLI { display: block!important}
+.taskInfo { position: relative; }
+.taskLineItem {float: left;  }
+.taskTime { width: 50px; font-size: 14px;}
+.taskName { overflow: hidden; width: 75%;}
+.taskkUL .a i { padding-left: 20px!important;}
+.showDescription { display: none; background-color: lightgrey;border: 3px solid darkblue; border-radius: 5px; padding: 20px; position: absolute; z-index: 99; }
+.taskDescription { padding: 10px; background-color: white; border: 1px solid grey; border-radius: 10px }
+
+
+#listStaff { position: absolute; border: 2px solid darkblue; border-radius: 20px; padding: 0px; z-index: 99; width: 400px; background-color: white; display: none }
+#listStaff ul { margin: 0px; padding:10px 0px; display: flex; justify-content: space-between; flex-wrap: wrap;}
+
+.staffName { height: 40px; padding-top: 6px; list-style-type: none; padding-left: 20px; padding-right: 20px; cursor: pointer}
+.staffName:hover { background-color: cornsilk}
+#closeListStaff { color: darkred; float: right; cursor: pointer; margin-right: 10px; margin-top: 10px}
+#closeListStaff:hover { font-weight: bold}
+

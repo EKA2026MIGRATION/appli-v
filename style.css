@@ -1,0 +1,13 @@
+html { background-color: grey}
+body { width: 90%; margin: 0 auto; background-color: white;}
+#topHeader { display: flex; flex-wrap: wrap}
+main { display: flex; flex-wrap: wrap;}
+#details article  { display: flex; flex-wrap: wrap}
+.leftPart { min-width: 300px; width: 30%; border: 1px solid black}
+.rightPart { width: 60%; margin-left: 7%}
+#information { display: flex; flex-direction: column; justify-content: space-between}
+
+.period { width: 20%}
+.textContent { width: 75%}
+
+.yellow { background-color: yellow}

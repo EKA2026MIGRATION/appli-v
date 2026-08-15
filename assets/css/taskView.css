@@ -1,0 +1,6 @@
+#calendarViewWeek { overflow: scroll; width: 100%}
+#calendarViewWeek .divDay { }
+#calendarViewWeek .taskH5 { text-align: center; background-color: darkred; color: white ; font-size: 15px; font-weight: bold}
+#calendarViewWeek .taskLineItem { font-size: 13px }
+#calendarViewWeek .taskLI { display: flex}
+#calendarViewWeek .taskH6 { font-weight: bold; border-bottom: 1px solid black}
