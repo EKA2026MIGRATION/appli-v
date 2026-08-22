@@ -7,9 +7,6 @@ $(() => {
 
   var productsALaCarte = JSON.parse($('#inputProductALaCarte').val());
 
-
-  console.Log("productsALaCarte", productsALaCarte);
-
   var i = 0;
   var array = [];
   var dates = $("#datePicker").datepicker({
