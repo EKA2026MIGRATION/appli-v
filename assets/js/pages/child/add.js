@@ -355,7 +355,7 @@ document.getElementById("searchListPerson").addEventListener(
     function(event) {
         let searchTerm = $(this).val();
         let size = $("#loadMoreListPerson").attr("data-size");
-        let url = `person/search/${searchTerm}?size=${size}?page=1`;
+        let url = `person/search/${searchTerm}?size=${size}&page=1`;
         $("#personList").html("");
         $("#pageSearch").val(1);
         $("#loadMoreListPerson").attr("disabled", false);

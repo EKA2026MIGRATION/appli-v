@@ -443,7 +443,9 @@ function associatedChildToPerson(childId, currentPersonId) {
 
   let url = urlHost+"person/associateChild/personId/"+personId+"/childId/"+childId+"/";
 
-  $('#showMessagePerson').load(url);
+  $('#showMessagePerson').load(url, function() {
+    location.reload();
+  });
   $("#revealSearchAssociatedChild").foundation("close");
 
   console.log(url);

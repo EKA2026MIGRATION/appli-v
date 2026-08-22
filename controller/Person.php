@@ -104,11 +104,7 @@ class Person extends Controller
         $childId = $request->childId;
         $personId = $request->personId;
 
-        $html = $childId.' '.$personId;
-
-        $datas = ['links' => ['personId' => $personId], ''];
-
-        $result = $this->cURL(API.'child/modify/'.$childId, 'PHP_CALL', $datas, 'PUT');
+        $result = $this->cURL(API.'person/associateChild/'.$personId.'/'.$childId, 'PHP_CALL', '', 'GET');
 
         return $this->renderJson($result);
 
